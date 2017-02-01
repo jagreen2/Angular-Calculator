@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+  <head>
+    <meta charset="utf-8">
+    <script src = "bower_components\angular\angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controllers.js">
+
+    </script>
+    <title></title>
+  </head>
+  <body ng-controller="CalculatorController as calc">
+    <input type="number" ng-model="a" />
+    <input type="number" ng-model="b" />
+    <button ng-click="calc.addNums(a,b)">Add</button>
+
+    <h1>{{calc.result}}</h1>
+  </body>
+</html>
